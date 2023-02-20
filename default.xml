@@ -6,6 +6,11 @@
   <default revision="refs/tags/android-12.1.0_r27"
            remote="aosp"
            sync-j="4" />
+  
+  <remote  name="github"
+           fetch="https://github.com/saregamapadanesa/" />
+
+  <project path="device/motorola/kernel-mtk" name="kernel-mtk" remote="github" revision="MMI-S3SV32.45-24-3" groups="device,kernel-mtk,pdk" />
   <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r27" />
   <contactinfo bugurl="go/repo-bug" />
   <project path="build/make" name="platform/build" groups="pdk" >
